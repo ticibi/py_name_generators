@@ -1,7 +1,7 @@
 import streamlit as st
 from random import choice, choices
 
-
+PATH = 'data/'
 GENERATORS = [
     'Techy Names',
     'Fantasy Names M',
@@ -10,20 +10,20 @@ GENERATORS = [
     'Orc Names',
     'Random Names',
 ]
-
 session_vars = [
     'debug',
     'selection',
     'favorites',
     'names',
+    'data',
 ]
-st.session_state.data = {}
+st.session_state.debug = False
+st.session_state.selection = ''
 st.session_state.names = []
 st.session_state.favorites = {}
+st.session_state.data = {}
 st.session_state.include_spaces = True
 
-
-PATH = 'data/'
 
 def read_names(filename) -> dict:
     data = {}
