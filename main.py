@@ -67,7 +67,7 @@ class Generator:
         except:
             suffix = ''
         try:
-            adjective = ' ' + choice(name_data['adjective'])
+            adjective = ' ' + choice(name_data['adjective']).strip()
         except:
             adjective = ''
         return prefix.capitalize() + adjective + middle + suffix
@@ -125,8 +125,6 @@ class App:
         selection = st.selectbox('Select a Generator', options=GENERATORS)
         st.session_state.selection = selection
         cols = st.columns((2, 1, 2))
-        #value = cols[0].checkbox('Include spaces?', value=st.session_state.include_spaces)
-        #st.session_state.include_spaces = value
         if cols[1].button('Generate Names'):
             self.display_names()
 
