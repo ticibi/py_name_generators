@@ -38,10 +38,8 @@ def read_names(filename) -> dict:
 
 def get_names(selection: str) -> dict:
     if selection in st.session_state.data:
-        print('data exists')
         name_data = st.session_state.data[selection]
     elif selection not in st.session_state.data:
-        print('data doesnt exist')
         name_data = read_names(selection)
         st.session_state.data[selection] = name_data
     else:
