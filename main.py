@@ -2,6 +2,7 @@ import streamlit as st
 from random import choice, choices
 
 PATH = 'data/'
+GROUPS = ['prefix', 'middle', 'suffix', 'adjective']
 GENERATORS = [
     'Techy Names',
     'Fantasy Names M',
@@ -27,7 +28,7 @@ st.session_state.include_spaces = True
 
 def read_names(filename) -> dict:
     data = {}
-    for group in ['prefix', 'middle', 'suffix', 'adjective']:
+    for group in GROUPS:
         try:
             with open(f'{PATH}{filename}/{group}.txt') as f:
                 values = f.readlines()
