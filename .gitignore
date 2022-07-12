@@ -1,3 +1,8 @@
+__pycache__
+
+# streamlit
+.streamlit/secrets.toml
+
 # environments
 .env
 .venv
@@ -6,6 +11,3 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-
-.streamlit/secrets.toml
-__pycache__

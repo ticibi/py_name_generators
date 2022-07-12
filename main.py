@@ -135,6 +135,6 @@ class App:
 
 if __name__ == '__main__':
     Gen = Generator()
-    app = App(Gen, debug=True)
+    app = App(Gen, debug=False)
     app.main_page()
     app.debug()
