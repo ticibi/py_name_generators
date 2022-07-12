@@ -60,7 +60,7 @@ class Generator:
         except:
             prefix = ''
         try:
-            middle = choices(name_data['middle'])[0]
+            middle = choice(name_data['middle']).strip()
         except:
             middle = ''
         try:
