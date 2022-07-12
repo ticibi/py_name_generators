@@ -102,7 +102,6 @@ grad
 folk
 stedt
 dorf
-stat
 fjord
 burg
  Atoll
@@ -122,3 +121,5 @@ stein
 walde
 vic
 lan
+under
+over
