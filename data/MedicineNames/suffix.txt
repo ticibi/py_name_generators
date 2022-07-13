@@ -20,3 +20,12 @@ vio
 vax
 lin
 lyn
+mol
+era
+lor
+ior
+tril
+ato
+flex
+flexin
+wav
