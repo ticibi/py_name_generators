@@ -29,3 +29,10 @@ ato
 flex
 flexin
 wav
+fy
+sec
+zene
+cene
+pramax
+picin
+inine
