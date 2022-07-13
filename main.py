@@ -10,6 +10,7 @@ GENERATORS = [
     'Town Names',
     'Orc Names',
     'Random Names',
+    'Medicine Names'
 ]
 session_vars = [
     'debug',
