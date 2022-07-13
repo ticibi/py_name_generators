@@ -67,9 +67,9 @@ class Generator:
             suffix = choice(name_data['suffix']).strip()
         else:
             suffix = ''
-        if name_data['adjective']:
+        try:
             adjective = ' ' + choice(name_data['adjective']).strip()
-        else:
+        except:
             adjective = ''
         return prefix.capitalize() + adjective + middle + suffix
 
