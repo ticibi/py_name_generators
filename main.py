@@ -52,24 +52,24 @@ class Generator:
     def __init__(self):
         self.weighted_favorites = {}
     
-    def generate_name(self):
+    def generate_name(self) -> str:
         selection = st.session_state.selection.replace(' ', '')
         name_data = get_names(selection)
-        try:
+        if name_data['prefix']:
             prefix = choice(name_data['prefix']).strip()
-        except:
+        else:
             prefix = ''
-        try:
+        if name_data['middle']:
             middle = choice(name_data['middle']).strip()
-        except:
+        else:
             middle = ''
-        try:
+        if name_data['suffix']:
             suffix = choice(name_data['suffix']).strip()
-        except:
+        else:
             suffix = ''
-        try:
+        if name_data['adjective']:
             adjective = ' ' + choice(name_data['adjective']).strip()
-        except:
+        else:
             adjective = ''
         return prefix.capitalize() + adjective + middle + suffix
 
